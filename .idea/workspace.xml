@@ -70,9 +70,15 @@
     "settings.editor.selected.configurable": "Settings.Markdown"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveMembersDialog.RECENTS_KEY">
+      <recent name="Squre" />
+      <recent name="Rectangle" />
+    </key>
+  </component>
   <component name="RunManager" selected="Application.Geometry">
     <configuration name="Geometry" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Geometry" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.geometry.Geometry" />
       <module name="sandbox.main" />
       <method v="2">
         <option name="Make" enabled="true" />
