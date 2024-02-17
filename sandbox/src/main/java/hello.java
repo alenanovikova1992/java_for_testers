@@ -4,5 +4,10 @@ public class hello {
         System.out.println(2+2);
         System.out.println(2/2);
         System.out.println(2+2*2);
+        System.out.println("hello " +" mir");
+        System.out.println("2+2 =" +4);
+        System.out.println("2+2 =" +2+2);
+        System.out.println("2+2 =" +(2+2));
+
     }
 }
