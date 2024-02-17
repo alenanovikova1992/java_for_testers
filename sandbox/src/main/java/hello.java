@@ -10,4 +10,7 @@ public class hello {
         System.out.println("2+2 =" +(2+2));
 
     }
+
+    public static class Geometry {
+    }
 }
