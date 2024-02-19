@@ -1,13 +1,13 @@
 package ru.stqa.geometry.figures;
 
-public class Squre {
-   public double side;
+public record Squre (double side){
+  /* public double side;
 
     public Squre(double side) {
         this.side=side;
     }
 
-
+*/
     public static void printSquareArea(Squre s) {
         System.out.println("площадь квадрата со стороной "+ s.side +" = "+ s.area());
     }
