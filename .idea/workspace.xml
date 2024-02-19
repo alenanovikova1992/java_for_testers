@@ -76,7 +76,7 @@
       <recent name="Rectangle" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.SquareTest.canCalculateArea">
+  <component name="RunManager" selected="Gradle.SquareTest.canCalculatePerimetr">
     <configuration name="Geometry" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.stqa.geometry.Geometry" />
       <module name="sandbox.main" />
@@ -139,8 +139,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.SquareTest.canCalculateArea" />
         <item itemvalue="Gradle.SquareTest.canCalculatePerimetr" />
+        <item itemvalue="Gradle.SquareTest.canCalculateArea" />
         <item itemvalue="Application.Geometry" />
         <item itemvalue="Application.hello" />
       </list>
