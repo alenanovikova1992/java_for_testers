@@ -14,6 +14,7 @@ public class SquareTest {
     void canCalculatePerimetr()
     {
         Assertions.assertEquals(20.0, new Squre(5.0).perimetr());
+
     }
     @Test
     void  canCalculatePLT()
@@ -27,6 +28,16 @@ public class SquareTest {
     }
 
 
+    @Test
+    void  canCalculatePT()
+    {
+        var t = new Triangle(6,4,2);
+        double result =t.perimeter(6,4,2);
+        double result1 =t.perimeter(1.5,1,1);
+        Assertions.assertEquals(12,result);
+        Assertions.assertEquals(3.5,result1);
+        return ;
+    }
 
 
 
