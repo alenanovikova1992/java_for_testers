@@ -1,20 +1,23 @@
-import java.io.File;
-
 public class hello {
     public static void main(String[] args) {
-        System.out.println("hello ");
-        System.out.println(2+2);
-        System.out.println(2/2);
-        System.out.println(2+2*2);
-        System.out.println("hello " +" mir");
-        System.out.println("2+2 =" +4);
-        System.out.println("2+2 =" +2+2);
-        System.out.println("2+2 =" +(2+2));
+       try { System.out.println("hello ");
+       var x=1;
+       var y=1;
+        int z = divide(x, y);
+        System.out.println(z);
+       }
+       catch (ArithmeticException exception)
+    {
+          // System.out.println(exception.getMessage());
+        exception.printStackTrace();
+        }
+        }
 
-        var configFile= new File("sandbox/build.gradle");
-        System.out.println(configFile.getAbsolutePath());
-        System.out.println(configFile.exists());
+    private static int divide(int x, int y){
+        var z =x/y;
+        return z;
     }
+
 
     public static class Geometry {
     }
