@@ -2,7 +2,7 @@ public class hello {
     public static void main(String[] args) {
        try { System.out.println("hello ");
        var x=1;
-       var y=1;
+       var y=0;
         int z = divide(x, y);
         System.out.println(z);
        }

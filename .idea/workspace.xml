@@ -76,7 +76,7 @@
       <recent name="Rectangle" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MathTest.testDivideByZero">
+  <component name="RunManager" selected="Application.hello">
     <configuration name="hello" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="hello" />
       <module name="sandbox.main" />
@@ -165,8 +165,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MathTest.testDivideByZero" />
         <item itemvalue="Application.hello" />
+        <item itemvalue="JUnit.MathTest.testDivideByZero" />
         <item itemvalue="Gradle.SquareTest.canCalculatePT" />
         <item itemvalue="Gradle.SquareTest.canCalculatePLT" />
         <item itemvalue="Gradle.SquareTest.canCalculatePerimetr" />
@@ -183,6 +183,17 @@
       <updated>1708007001185</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/sandbox/src/main/java/hello.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
