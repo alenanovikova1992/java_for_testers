@@ -1,23 +1,17 @@
 public class hello {
     public static void main(String[] args) {
-       try { System.out.println("hello ");
+
        var x=1;
-       var y=0;
-        var z = calculate();
-       // System.out.println(z);
+       var y=1;
+       if (y==0){
+           System.out.println("деление на 0 запрещено");
+       } else {
+           var z = (double) divide(x, y);
+           System.out.println("успешно отработало ");
        }
-       catch (ArithmeticException exception)
-    {
-          // System.out.println(exception.getMessage());
-        exception.printStackTrace();
+
         }
-        }
-        private static double calculate(){
-            var x=1;
-            var y=0;
-            int z = divide(x, y);
-            return z;
-        }
+
 
     private static int divide(int x, int y){
         var z =x/y;
