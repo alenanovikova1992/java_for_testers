@@ -3,14 +3,20 @@ public class hello {
        try { System.out.println("hello ");
        var x=1;
        var y=0;
-        int z = divide(x, y);
-        System.out.println(z);
+        var z = calculate();
+       // System.out.println(z);
        }
        catch (ArithmeticException exception)
     {
           // System.out.println(exception.getMessage());
         exception.printStackTrace();
         }
+        }
+        private static double calculate(){
+            var x=1;
+            var y=0;
+            int z = divide(x, y);
+            return z;
         }
 
     private static int divide(int x, int y){
