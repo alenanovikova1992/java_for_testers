@@ -1,9 +1,10 @@
 package ru.stqa.geometry.figures;
 
 public record Triangle (double a, double b, double c){
+
     public Triangle  {
         if (a<0||b<0||c<0)  {
-            throw new IllegalArgumentException("Стороны прямоугольника не могут быть отрицательными");
+            throw new IllegalArgumentException("Стороны треугольника не могут быть отрицательными");
         }
 
     }
@@ -28,16 +29,9 @@ public record Triangle (double a, double b, double c){
 
         double p=(a+b+c)/2;
         return  Math.sqrt(p*(p-a)*(p-b)*(p-c));
-
     }
-    public static double Sum(double a, double b, double c) {
 
-        double s1=a+b;
-        double s2=b+c;
-        double s3=c+a;
-        return  Math.sqrt(p*(p-a)*(p-b)*(p-c));
 
-    }
 
 
 }

@@ -45,11 +45,13 @@ public class TriangleTest {
     void  SumTR()
     {
         var t = new Triangle(6,4,2);
-        double result =t.area(6,4,2);
-
-        if ( !(result==0.0)){
-            throw new AssertionError(String.format("Expected %f, actual  %f",0.0, result ));
+        double s1=t.a()+t.b();
+        double s2=t.b()+t.c();
+        double s3=t.c()+t.a();
+        if ( s1<t.c() || s2<t.a() || s3<t.b()) {
+            throw new AssertionError(String.format("Треугольника не существует со сторонами  %f, %f, %f, ",t.a(),t.c(), t.b() ));
         }
+
 
     }
     }
