@@ -76,24 +76,7 @@
       <recent name="Rectangle" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RectangleTest.cannotCreateRectangleWithNegativeSide">
-    <configuration name="hello" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hello" />
-      <module name="sandbox.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MathTest.testDivideByZero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="sandbox.test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MathTest" />
-      <option name="METHOD_NAME" value="testDivideByZero" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.TriangleTest.cannotCreateTriangleWithNegativeSide">
     <configuration name="RectangleTest.cannotCreateRectangleWithNegativeSide" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="sandbox.test" />
       <extension name="coverage">
@@ -105,22 +88,6 @@
       <option name="PACKAGE_NAME" value="ru.stqa.geometry.figures" />
       <option name="MAIN_CLASS_NAME" value="ru.stqa.geometry.figures.RectangleTest" />
       <option name="METHOD_NAME" value="cannotCreateRectangleWithNegativeSide" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SquareTest.canCalculatePLT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="sandbox.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.stqa.geometry.figures.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.stqa.geometry.figures" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.geometry.figures.SquareTest" />
-      <option name="METHOD_NAME" value="canCalculatePLT" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -142,13 +109,60 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SquareTest.cannotCreateTriangleWithNegativeSide" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sandbox.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.stqa.geometry.figures.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.stqa.geometry.figures" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.geometry.figures.SquareTest" />
+      <option name="METHOD_NAME" value="cannotCreateTriangleWithNegativeSide" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TriangleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sandbox.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.stqa.geometry.figures.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.stqa.geometry.figures" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.geometry.figures.TriangleTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TriangleTest.cannotCreateTriangleWithNegativeSide" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sandbox.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.stqa.geometry.figures.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.stqa.geometry.figures" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.geometry.figures.TriangleTest" />
+      <option name="METHOD_NAME" value="cannotCreateTriangleWithNegativeSide" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.RectangleTest.cannotCreateRectangleWithNegativeSide" />
+        <item itemvalue="JUnit.TriangleTest.cannotCreateTriangleWithNegativeSide" />
+        <item itemvalue="JUnit.TriangleTest" />
         <item itemvalue="JUnit.SquareTest.cannotCreateSquareWithNegativeSide" />
-        <item itemvalue="JUnit.SquareTest.canCalculatePLT" />
-        <item itemvalue="Application.hello" />
-        <item itemvalue="JUnit.MathTest.testDivideByZero" />
+        <item itemvalue="JUnit.SquareTest.cannotCreateTriangleWithNegativeSide" />
+        <item itemvalue="JUnit.RectangleTest.cannotCreateRectangleWithNegativeSide" />
       </list>
     </recent_temporary>
   </component>
