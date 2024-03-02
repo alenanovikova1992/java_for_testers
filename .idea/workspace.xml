@@ -76,7 +76,7 @@
       <recent name="Rectangle" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RectangleTest.testEquality">
+  <component name="RunManager" selected="JUnit.TriangleTest.testEquality">
     <configuration name="RectangleTest.testEquality" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="sandbox.test" />
       <extension name="coverage">
@@ -141,7 +141,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TriangleTest.SumTR" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TriangleTest.testEquality" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="sandbox.test" />
       <extension name="coverage">
         <pattern>
@@ -151,7 +151,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="ru.stqa.geometry.figures" />
       <option name="MAIN_CLASS_NAME" value="ru.stqa.geometry.figures.TriangleTest" />
-      <option name="METHOD_NAME" value="SumTR" />
+      <option name="METHOD_NAME" value="testEquality" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -159,11 +159,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TriangleTest.testEquality" />
         <item itemvalue="JUnit.RectangleTest.testEquality" />
         <item itemvalue="JUnit.RectangleTest.testEquality2" />
         <item itemvalue="JUnit.RectangleTest.testPass" />
         <item itemvalue="JUnit.RectangleTest.testNonEquality" />
-        <item itemvalue="JUnit.TriangleTest.SumTR" />
       </list>
     </recent_temporary>
   </component>
