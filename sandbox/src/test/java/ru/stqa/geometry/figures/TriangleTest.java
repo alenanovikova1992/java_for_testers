@@ -56,11 +56,23 @@ public class TriangleTest {
     }
     @Test
     void  testEquality (){
-        var r1 = new Triangle(3.,4.0,5.0);
-        var r2 = new Triangle(4.,5.0,3.0);
-        var r3 = new  Triangle(5,3,4);
+        var a=3.0;
+        var b=4.0;
+        var c=5.0;
+        var r1 = new Triangle(a,b,c);
+        var r2 = new Triangle(b,c,a);
+        var r3 = new  Triangle(c,a,b);
+        var r4 = new Triangle(a,b,c);
+        var r5 = new Triangle(b,a,c);
+        var r6 = new Triangle(c,a,b);
+        var r7 = new Triangle(a,b,c);
+
         Assertions.assertEquals(r1,r2);
         Assertions.assertEquals(r2,r3);
+        Assertions.assertEquals(r3,r4);
+        Assertions.assertEquals(r4,r5);
+        Assertions.assertEquals(r5,r6);
+        Assertions.assertEquals(r6,r7);
     }
     }
 
