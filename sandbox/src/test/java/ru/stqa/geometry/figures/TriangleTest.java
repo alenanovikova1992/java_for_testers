@@ -44,7 +44,13 @@ public class TriangleTest {
     @Test
     void  SumTR()
     {
-        var t = new Triangle(6,4,2);
+
+       // var t = new Triangle(6,4,2);
+        // var t = new Triangle(-6,4,2);
+        // var t = new Triangle(6,-4,2);
+        // var t = new Triangle(6,4,-2);
+        var t = new Triangle(9,4,2);
+
         double s1=t.a()+t.b();
         double s2=t.b()+t.c();
         double s3=t.c()+t.a();

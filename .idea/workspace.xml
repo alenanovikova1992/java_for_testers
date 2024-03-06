@@ -85,16 +85,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TriangleTest.testEquality">
-    <configuration name="GroupCreationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="address_book_test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="GroupCreationTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.TriangleTest.SumTR">
     <configuration name="GroupRemovalTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="address_book_test" />
       <option name="PACKAGE_NAME" value="" />
@@ -124,6 +115,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TriangleTest.SumTR" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sandbox.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.stqa.geometry.figures.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.stqa.geometry.figures" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.geometry.figures.TriangleTest" />
+      <option name="METHOD_NAME" value="SumTR" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TriangleTest.testEquality" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="sandbox.test" />
       <extension name="coverage">
@@ -142,11 +149,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TriangleTest.SumTR" />
         <item itemvalue="JUnit.TriangleTest.testEquality" />
         <item itemvalue="JUnit.GroupRemovalTest.canRemoveGroup" />
         <item itemvalue="JUnit.GroupRemovalTest" />
         <item itemvalue="JUnit.GroupRemovalTest.ddd" />
-        <item itemvalue="JUnit.GroupCreationTest" />
       </list>
     </recent_temporary>
   </component>
