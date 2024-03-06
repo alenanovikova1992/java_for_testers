@@ -85,7 +85,17 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TriangleTest.SumTR">
+  <component name="RunManager" selected="JUnit.GroupCreationTest.canCreateGroup1">
+    <configuration name="GroupCreationTest.canCreateGroup1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="address_book_test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="GroupCreationTest" />
+      <option name="METHOD_NAME" value="canCreateGroup1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GroupRemovalTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="address_book_test" />
       <option name="PACKAGE_NAME" value="" />
@@ -100,16 +110,6 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="GroupRemovalTest" />
       <option name="METHOD_NAME" value="canRemoveGroup" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GroupRemovalTest.ddd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="address_book_test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="GroupRemovalTest" />
-      <option name="METHOD_NAME" value="ddd" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -149,11 +149,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.GroupCreationTest.canCreateGroup1" />
         <item itemvalue="JUnit.TriangleTest.SumTR" />
         <item itemvalue="JUnit.TriangleTest.testEquality" />
         <item itemvalue="JUnit.GroupRemovalTest.canRemoveGroup" />
         <item itemvalue="JUnit.GroupRemovalTest" />
-        <item itemvalue="JUnit.GroupRemovalTest.ddd" />
       </list>
     </recent_temporary>
   </component>
