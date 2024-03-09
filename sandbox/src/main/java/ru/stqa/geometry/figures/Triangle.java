@@ -3,11 +3,20 @@ package ru.stqa.geometry.figures;
 public record Triangle (double a, double b, double c){
 
     public Triangle  {
-        if (a<0||b<0||c<0)  {
-            throw new IllegalArgumentException("Стороны треугольника не могут быть отрицательными");
-        }
+       // var t = new Triangle(a,b,c);
+        double s1=a+b;
+        double s2=b+c;
+        double s3=c+a;
+            if (a<0||b<0||c<0) {
+                throw new IllegalArgumentException("Стороны треугольника не могут быть отрицательными");
+            }
+            if ( s1<c || s2<a || s3<b) {
+               throw new AssertionError(String.format("Треугольника не существует со сторонами  %f, %f, %f, ",a,c, b ));
+                    }
+                }
 
-    }
+
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

@@ -88,31 +88,12 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.GroupCreationTest.canCreateGroup1">
+  <component name="RunManager" selected="JUnit.TriangleTest.testEquality">
     <configuration name="GroupCreationTest.canCreateGroup1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="address_book_test" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="GroupCreationTest" />
       <option name="METHOD_NAME" value="canCreateGroup1" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GroupRemovalTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="address_book_test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="GroupRemovalTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GroupRemovalTest.canRemoveGroup" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="address_book_test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="GroupRemovalTest" />
-      <option name="METHOD_NAME" value="canRemoveGroup" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -129,6 +110,38 @@
       <option name="PACKAGE_NAME" value="ru.stqa.geometry.figures" />
       <option name="MAIN_CLASS_NAME" value="ru.stqa.geometry.figures.TriangleTest" />
       <option name="METHOD_NAME" value="SumTR" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TriangleTest.canCalculatePT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sandbox.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.stqa.geometry.figures.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.stqa.geometry.figures" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.geometry.figures.TriangleTest" />
+      <option name="METHOD_NAME" value="canCalculatePT" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TriangleTest.cannotCreateTriangleWithNegativeSide" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sandbox.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.stqa.geometry.figures.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.stqa.geometry.figures" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.geometry.figures.TriangleTest" />
+      <option name="METHOD_NAME" value="cannotCreateTriangleWithNegativeSide" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -152,11 +165,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.GroupCreationTest.canCreateGroup1" />
-        <item itemvalue="JUnit.TriangleTest.SumTR" />
         <item itemvalue="JUnit.TriangleTest.testEquality" />
-        <item itemvalue="JUnit.GroupRemovalTest.canRemoveGroup" />
-        <item itemvalue="JUnit.GroupRemovalTest" />
+        <item itemvalue="JUnit.TriangleTest.SumTR" />
+        <item itemvalue="JUnit.TriangleTest.canCalculatePT" />
+        <item itemvalue="JUnit.TriangleTest.cannotCreateTriangleWithNegativeSide" />
+        <item itemvalue="JUnit.GroupCreationTest.canCreateGroup1" />
       </list>
     </recent_temporary>
   </component>

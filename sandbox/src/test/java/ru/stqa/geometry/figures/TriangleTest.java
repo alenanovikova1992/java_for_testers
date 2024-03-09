@@ -29,41 +29,13 @@ public class TriangleTest {
         Assertions.assertEquals(3.5,result1);
         return ;
     }
-        @Test
-        void cannotCreateTriangleWithNegativeSide()
-        {try {
-            new Triangle (-5.0, 3.0, 7.0);
-            Assertions.fail();
-        }
-        catch (IllegalArgumentException exception) {
-//ok
-        }
-
-        }
-
-    @Test
-    void  SumTR()
-    {
-
-       // var t = new Triangle(6,4,2);
-        // var t = new Triangle(-6,4,2);
-        // var t = new Triangle(6,-4,2);
-        // var t = new Triangle(6,4,-2);
-        var t = new Triangle(9,4,2);
-
-        double s1=t.a()+t.b();
-        double s2=t.b()+t.c();
-        double s3=t.c()+t.a();
-        if ( s1<t.c() || s2<t.a() || s3<t.b()) {
-            throw new AssertionError(String.format("Треугольника не существует со сторонами  %f, %f, %f, ",t.a(),t.c(), t.b() ));
-        }
 
 
-    }
+
     @Test
     void  testEquality (){
         var a=3.0;
-        var b=4.0;
+        var b=-4.0;
         var c=5.0;
         var r1 = new Triangle(a,b,c);
         var r2 = new Triangle(b,c,a);
