@@ -1,23 +1,15 @@
 package manager;
 
 import model.ContactDate;
-import model.GroupDate;
 import org.openqa.selenium.By;
-
 public class ContactHelper extends  HelperBase{
     public ContactHelper(ApplicationManager manager ){
         super(manager);
-
     }
     public void createContact(ContactDate contact) {
         openContactPage();
         openNewContactPage();
         fillContactForm(contact);
-        // initContactCreation();
-        // submitContactCreation();
-        //  returnToContactPage();
-
-
     }
     private void fillContactForm(ContactDate contact) {
         type(By.name("firstname"), contact.firstname());
@@ -26,17 +18,9 @@ public class ContactHelper extends  HelperBase{
         click(By.cssSelector("input:nth-child(75)"));
     }
 
-    public void modifyContact(ContactDate contact) {
-        openContactPage();
-        openNewContactPage();
-      //  selectContact();
-     //   initContactModification();
-      //  fillContactForm(contact);
-     //   submitContactModification();
-     //   returnToContactPage();
-    }
     public void removeContact() {
         openContactPage();
+        selectContact();
         removeSelectedContact();
         returnToContactPage();
     }
@@ -46,51 +30,18 @@ public class ContactHelper extends  HelperBase{
     public void openContactPage() {
         click(By.linkText("home"));
     }
-
-
     public boolean isContactPresent() {
         openContactPage();
-
-        return manager.isElementPresesent(By.name("selected[]"));
+        return manager.isElementPresesent(By.name("By.cssSelector(\".odd:nth-child(3) > .center:nth-child(8) img\") "));
     }
-
-
-
     private void removeSelectedContact() {
-        click(By.name("delete"));
+        click(By.name("Delete"));
     }
-
-
-
-
-    private void submitContactCreation() {
-        click(By.name("submit"));
-    }
-
-    private void initContactCreation() {
-        click(By.name("add new"));
-    }
-
-
-
     private void returnToContactPage() {
         click(By.linkText("add new"));
     }
-
-    private void submitContactModification() {
-        click(By.name("update"));
-    }
-
-
-    private void selectContact() {
-        openContactPage();
-        click(By.linkText("new"));
-        click(By.name("selected[]"));
-
-    }
-
-    private void initContactModification() {
-        click(By.name("edit"));
+      private void selectContact() {
+     click(By.id("8"));
     }
 
 }

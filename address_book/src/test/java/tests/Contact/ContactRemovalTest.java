@@ -1,5 +1,6 @@
 package tests.Contact;
 
+import model.ContactDate;
 import model.GroupDate;
 import org.junit.jupiter.api.Test;
 import tests.TestBase;
@@ -7,12 +8,11 @@ import tests.TestBase;
 public class ContactRemovalTest extends TestBase {
 
     @Test
-    public void canRemoveGroup() {
-       // app.groups().openGroupsPage();
-        if (app.groups().isGroupPresent()){
-            app.groups().createGroup(new GroupDate("", "",""));
+    public void canRemoveContact() {
+        if (app.contacts().isContactPresent()){
+            app.contacts().createContact(new ContactDate("udalenie","udalenie","udalenie"));
         }
-        app.groups().removeGroup();
+        app.contacts().removeContact();
     }
 
 }
