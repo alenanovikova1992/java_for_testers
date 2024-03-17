@@ -9,6 +9,7 @@ public class ApplicationManager {
     protected WebDriver driver;
     private loginHelper session;
     private GropHelper groups;
+    private ContactHelper contacts;
   public    void init(String browser) {
         if (driver == null){
             if ("Google Chrome".equals(browser)){
@@ -41,6 +42,13 @@ session = new loginHelper(this);
             groups = new GropHelper (this);
         }
         return groups;
+    }
+    public ContactHelper contacts()
+    {
+        if (contacts == null){
+            contacts = new ContactHelper(this);
+        }
+        return contacts;
     }
 
     public boolean isElementPresesent(By locator) {

@@ -1,7 +1,8 @@
-package tests;
+package tests.Group;
 
 import model.GroupDate;
 import org.junit.jupiter.api.Test;
+import tests.TestBase;
 
 public class GroupRemovalTest extends TestBase {
 
