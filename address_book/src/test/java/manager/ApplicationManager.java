@@ -23,9 +23,9 @@ public class ApplicationManager {
             //js = (JavascriptExecutor) manager.ApplicationManager.driver;
             //vars = new HashMap<String, Object>();
             Runtime.getRuntime().addShutdownHook(new Thread(driver::quit));
-            driver.get("http://localhost/addressbook/");
+            driver.get("http://localhost/addressbook/addressbook/");
             driver.manage().window().setSize(new Dimension(1302, 732));
-            driver.findElement(By.linkText("addressbook/")).click();
+           // driver.findElement(By.linkText("addressbook/")).click();
             session().login ("admin", "secret");
         }
     }
