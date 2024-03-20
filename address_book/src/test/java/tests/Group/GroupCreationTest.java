@@ -3,7 +3,6 @@ package tests.Group;
 import model.GroupDate;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import manager.TestBase;
 
 public class GroupCreationTest extends TestBase {
     @Test
@@ -20,5 +19,16 @@ public class GroupCreationTest extends TestBase {
     @Test
     public void canCreateGroupWithNameOnly() {
         app.groups().createGroup(new GroupDate().withHeader("some name"));
+    }
+    @Test
+    public void canCreateMultipleGroup() {
+        int n=5;
+        int groupCount = app.groups().getCount();
+
+        for (int i=0; i < n; i++) {
+            app.groups().createGroup(new GroupDate(randomString(i), "header "+i, "footer "+i));
+        }
+        int newGroupCount = app.groups().getCount();
+        Assertions.assertEquals(groupCount+n,newGroupCount);
     }
 }

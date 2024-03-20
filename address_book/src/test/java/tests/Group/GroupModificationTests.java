@@ -2,7 +2,6 @@ package tests.Group;
 
 import model.GroupDate;
 import org.junit.jupiter.api.Test;
-import manager.TestBase;
 
 public class GroupModificationTests extends TestBase {
 

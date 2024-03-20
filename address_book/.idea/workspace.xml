@@ -70,7 +70,7 @@
     </key>
   </component>
   <component name="RunManager" selected="Gradle.GroupRemovalTest">
-    <configuration name="GroupCreationTest (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="GroupCreationTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -93,7 +93,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="GroupCreationTest.canCreateGroup" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="GroupCreationTest.canCreateMultipleGroup" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -106,7 +106,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;tests.Group.GroupCreationTest.canCreateGroup&quot;" />
+            <option value="&quot;tests.Group.GroupCreationTest.canCreateMultipleGroup&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -186,19 +186,19 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Gradle.GroupCreationTest" />
+      <item itemvalue="Gradle.GroupCreationTest.canCreateMultipleGroup" />
       <item itemvalue="Gradle.GroupModificationTests" />
-      <item itemvalue="Gradle.GroupCreationTest.canCreateGroup" />
       <item itemvalue="Gradle.GroupRemovalTest.canRemoveGroup" />
       <item itemvalue="Gradle.GroupRemovalTest" />
-      <item itemvalue="Gradle.GroupCreationTest (1)" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.GroupRemovalTest" />
+        <item itemvalue="Gradle.GroupCreationTest" />
+        <item itemvalue="Gradle.GroupCreationTest.canCreateMultipleGroup" />
         <item itemvalue="Gradle.GroupModificationTests" />
         <item itemvalue="Gradle.GroupRemovalTest.canRemoveGroup" />
-        <item itemvalue="Gradle.GroupCreationTest.canCreateGroup" />
-        <item itemvalue="Gradle.GroupCreationTest (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -212,5 +212,16 @@
       <updated>1709739897589</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/manager/GropHelper.java</url>
+          <line>96</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
