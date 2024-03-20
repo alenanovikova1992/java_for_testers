@@ -1,9 +1,8 @@
 package tests.Contact;
 
 import model.ContactDate;
-import model.GroupDate;
 import org.junit.jupiter.api.Test;
-import tests.TestBase;
+import manager.TestBase;
 
 public class ContactRemovalTest extends TestBase {
 

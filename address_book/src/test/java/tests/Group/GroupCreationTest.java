@@ -2,7 +2,7 @@ package tests.Group;
 
 import model.GroupDate;
 import org.junit.jupiter.api.Test;
-import tests.TestBase;
+import manager.TestBase;
 
 public class GroupCreationTest extends TestBase {
     @Test
