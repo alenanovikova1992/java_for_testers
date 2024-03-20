@@ -42,11 +42,6 @@ public class GropHelper extends  HelperBase{
         }
     }
 
-    public boolean isGroupPresent() {
-        openGroupsPage();
-        return manager.isElementPresesent(By.name("selected[]"));
-    }
-
 
 
     private void removeSelectedGroup() {
@@ -86,4 +81,8 @@ public class GropHelper extends  HelperBase{
         click(By.name("edit"));
     }
 
+    public int getCount() {
+        openGroupsPage();
+        return manager.driver.findElements(By.name("selected[]")).size();
+    }
 }
