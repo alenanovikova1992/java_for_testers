@@ -35,13 +35,13 @@ public class ContactHelper extends  HelperBase{
         return manager.isElementPresesent(By.name("By.cssSelector(\".odd:nth-child(3) > .center:nth-child(8) img\") "));
     }
     private void removeSelectedContact() {
-        click(By.name("Delete"));
+        click(By.xpath("//input[@value=\'Delete\']"));
     }
     private void returnToContactPage() {
         click(By.linkText("add new"));
     }
       private void selectContact() {
-     click(By.id("8"));
+     click(By.xpath("//input[@id=\'MassCB\']"));
     }
 
 }
