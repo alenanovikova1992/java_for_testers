@@ -1,7 +1,6 @@
 package tests.Group;
 import model.GroupDate;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
 import java.util.List;
@@ -36,8 +35,6 @@ public class GroupCreationTest extends TestBase {
         int newGroupCount = app.groups().getCount();
         Assertions.assertEquals(groupCount+1,newGroupCount);
     }
-
-
     @ParameterizedTest
     @MethodSource("negativeGroupProvider")
     public void canNotCreateGroup(GroupDate group) {

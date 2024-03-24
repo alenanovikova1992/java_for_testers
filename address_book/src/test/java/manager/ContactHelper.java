@@ -43,5 +43,8 @@ public class ContactHelper extends  HelperBase{
       private void selectContact() {
      click(By.xpath("//input[@id=\'MassCB\']"));
     }
-
+    public int getCount() {
+        openContactPage();
+        return manager.driver.findElements(By.name("selected[]")).size();
+    }
 }
