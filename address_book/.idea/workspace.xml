@@ -93,7 +93,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ContactCreationTest.canCreateMultipleContact" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ContactCreationTest.canCreateContact" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -106,7 +106,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;tests.Contact.ContactCreationTest.canCreateMultipleContact&quot;" />
+            <option value="&quot;tests.Contact.ContactCreationTest.canCreateContact&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -186,8 +186,8 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Gradle.ContactCreationTest.canCreateContact" />
       <item itemvalue="Gradle.ContactCreationTest" />
-      <item itemvalue="Gradle.ContactCreationTest.canCreateMultipleContact" />
       <item itemvalue="Gradle.ContactModificationTest" />
       <item itemvalue="Gradle.ContactRemovalTestAll" />
       <item itemvalue="Gradle.GroupCreationTest" />
@@ -195,10 +195,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.ContactCreationTest" />
+        <item itemvalue="Gradle.ContactCreationTest.canCreateContact" />
         <item itemvalue="Gradle.ContactModificationTest" />
         <item itemvalue="Gradle.GroupCreationTest" />
         <item itemvalue="Gradle.ContactRemovalTestAll" />
-        <item itemvalue="Gradle.ContactCreationTest.canCreateMultipleContact" />
       </list>
     </recent_temporary>
   </component>

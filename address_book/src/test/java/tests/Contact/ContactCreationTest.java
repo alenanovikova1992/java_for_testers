@@ -8,20 +8,41 @@ import tests.Group.TestBase;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
 
+import java.io.File;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.Comparator;
 import java.util.List;
 import java.util.ArrayList;
+import java.util.Random;
+
 public class ContactCreationTest extends TestBase {
     @Test
     public void canCreateContact() {
     var  contact = new ContactDate()
             .withFirstname(randomString(10))
             .withlastname(randomString(10))
-            .withPhoto("src/test/resources/images/avatar.png");
+            .withPhoto(randomFile("src/test/resources/images"));
     app.contacts().createContact(contact);
     }
+    public  static String randomString(int n){
+        var rnd = new Random();
+        var result = "";
+        for (int i=0; i< n; i++){
+            result=result+(char)('a'+rnd.nextInt(26));
+        }
+        return result;
+    }
+    public  static String randomFile(String dir){
+        var fileNames =new File(dir).list();
+        var rnd = new Random();
+        var index = rnd.nextInt(fileNames.length);
+      return   Paths.get(dir,fileNames[index]).toString();
 
-}/*
+    }
+
+}
+/*
 public class ContactCreationTest extends TestBase {
     public static List<ContactDate> contactProvider() {
         var result = new ArrayList<ContactDate>();
