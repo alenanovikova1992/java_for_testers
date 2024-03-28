@@ -195,9 +195,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.ContactCreationTest" />
+        <item itemvalue="Gradle.ContactModificationTest" />
         <item itemvalue="Gradle.GroupCreationTest" />
         <item itemvalue="Gradle.ContactRemovalTestAll" />
-        <item itemvalue="Gradle.ContactModificationTest" />
         <item itemvalue="Gradle.ContactCreationTest.canCreateMultipleContact" />
       </list>
     </recent_temporary>
@@ -216,11 +216,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/tests/Group/GroupModificationTests.java</url>
-          <line>30</line>
-          <option name="timeStamp" value="29" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/tests/Group/GroupCreationTest.java</url>
           <line>45</line>

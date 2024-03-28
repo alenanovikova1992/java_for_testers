@@ -1,6 +1,5 @@
 package tests.Contact;
 import model.ContactDate;
-import model.GroupDate;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import java.util.ArrayList;
@@ -12,12 +11,12 @@ public class ContactModificationTest extends TestBase {
     @Test
     void canModifyContact(){
         if (app.contacts().getCount() == 0){
-            app.contacts().createContact(new ContactDate("", "l", "lalja","lalajla"));
+            app.contacts().createContact(new ContactDate("", "l", "lalja","lalajla","",""));
         }
         var oldContacts = app.contacts().getList();
         var rnd = new Random();
         var index = rnd.nextInt(oldContacts.size());
-        var testDate = new ContactDate().withName("modified name");
+        var testDate = new ContactDate().withFirstname("modified name");
         app.contacts().modifyContact(oldContacts.get(index), testDate);
         var newContact = app.contacts().getList();
         var expectedList = new ArrayList<>(oldContacts);

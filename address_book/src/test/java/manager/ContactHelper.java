@@ -1,7 +1,6 @@
 package manager;
 
 import model.ContactDate;
-import model.GroupDate;
 import org.openqa.selenium.By;
 
 import java.util.ArrayList;
@@ -23,11 +22,12 @@ public class ContactHelper extends  HelperBase{
         type(By.name("firstname"), contact.firstname());
         type(By.name("middlename"), contact.middlename());
         type(By.name("lastname"), contact.lastname());
+        attach(By.name("photo"),contact.photo());
         // click(By.cssSelector("input:nth-child(75)"));
     }
     private void submitContactCreation() {
-      //  click(By.name("submit"));
-        click(By.cssSelector("input:nth-child(75)"));
+        click(By.name("submit"));
+        //click(By.cssSelector("input:nth-child(75)"));
     }
     private void returnToContactsPage() {
         click(By.linkText("home"));
@@ -93,7 +93,7 @@ public class ContactHelper extends  HelperBase{
             var name = span.getText();
             var checkbox = span.findElement(By.name("selected[]"));
             var id  = checkbox.getAttribute("value");
-            contacts.add(new ContactDate().withID(id).withName(name) );
+            contacts.add(new ContactDate().withID(id).withFirstname(name) );
         }
         return contacts;
     }

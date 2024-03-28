@@ -11,22 +11,17 @@ import org.junit.jupiter.params.provider.MethodSource;
 import java.util.Comparator;
 import java.util.List;
 import java.util.ArrayList;
-/*public class ContactCreationTest extends TestBase {
+public class ContactCreationTest extends TestBase {
     @Test
     public void canCreateContact() {
-    app.contacts().createContact(new ContactDate("firstname", "middlename","lastname"));
+    var  contact = new ContactDate()
+            .withFirstname(randomString(10))
+            .withlastname(randomString(10))
+            .withPhoto("src/test/resources/images/avatar.png");
+    app.contacts().createContact(contact);
     }
-    @Test
-    public void canCreateContactEmpty() {
-        app.contacts().createContact(new ContactDate());
-    }
-   @Test
-    public void canCreateContactWithNameOnly() {
-        app.contacts().createContact(new ContactDate().withlastname("some name"));
 
-
-    }
-}*/
+}/*
 public class ContactCreationTest extends TestBase {
     public static List<ContactDate> contactProvider() {
         var result = new ArrayList<ContactDate>();
@@ -66,7 +61,7 @@ public class ContactCreationTest extends TestBase {
         expectedList.add(contact.withID(newContacts.get(newContacts.size()-1).id()).withlastname("").withMiddlename(""));
         expectedList.sort(compareByID);
         Assertions.assertEquals(newContacts,expectedList);
-    }
+    }*/
 
 /*
     @ParameterizedTest
@@ -76,5 +71,5 @@ public class ContactCreationTest extends TestBase {
         app.contacts().createContact(contact);
         var newContacts = app.contacts().getList();
          Assertions.assertEquals(newContacts, oldContacts);
-    }*/
-}
+    }
+}*/
