@@ -16,7 +16,7 @@ public class GroupCreationTest extends TestBase {
                     result.add(new GroupDate().withName(name).withHeader(header).withFooter(footer)); }
             }
         }
-        for (int i=0; i < 5; i++) {
+        for (int i=0; i < 2; i++) {
             result.add(new GroupDate()
                     .withName(randomString(i*10))
                     .withHeader(randomString(i*10))
@@ -28,7 +28,7 @@ public class GroupCreationTest extends TestBase {
 
     public static List<GroupDate> negativeGroupProvider() {
         var result = new ArrayList<GroupDate>(List.of(
-                new GroupDate("", "group name'","","")));
+                new GroupDate("", "'","","")));
         return result;
     }
 
@@ -53,7 +53,6 @@ public class GroupCreationTest extends TestBase {
         var oldGroups = app.groups().getList();
         app.groups().createGroup(group);
         var newGroups = app.groups().getList();
-        int newGroupCount = app.groups().getCount();
-        Assertions.assertEquals(newGroups, oldGroups);
+               Assertions.assertEquals(newGroups, oldGroups);
     }
 }

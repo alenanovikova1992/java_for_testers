@@ -2,7 +2,7 @@ package model;
 
 public record GroupDate(String id, String name, String header, String footer) {
     public GroupDate(){
-        this ("", "name","header","footer");
+        this ("", "","","");
     }
 
     public GroupDate withName(String name) {
