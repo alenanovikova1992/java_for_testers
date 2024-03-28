@@ -25,9 +25,9 @@ public class GropHelper extends  HelperBase{
         type(By.name("group_footer"), group.footer());
     }
 
-    public void modifyGroup(GroupDate modifiedGroup) {
+    public void modifyGroup(GroupDate group, GroupDate modifiedGroup) {
         openGroupsPage();
-        selectGroup(null);
+        selectGroup(group);
         initGroupModification();
         fillGroupForm(modifiedGroup);
         submitGroupModification();
@@ -104,6 +104,7 @@ public class GropHelper extends  HelperBase{
     }
 
     public List<GroupDate> getList() {
+        openGroupsPage();
         var groups = new ArrayList<GroupDate>();
         var spans = manager.driver.findElements(By.cssSelector("span.group"));
         for (var span : spans ){
