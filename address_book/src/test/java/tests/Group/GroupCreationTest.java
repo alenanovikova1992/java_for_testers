@@ -1,4 +1,5 @@
 package tests.Group;
+import common.CommonFunctions;
 import model.GroupDate;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -18,9 +19,9 @@ public class GroupCreationTest extends TestBase {
         }
         for (int i=0; i < 2; i++) {
             result.add(new GroupDate()
-                    .withName(randomString(i*10))
-                    .withHeader(randomString(i*10))
-                    .withFooter(randomString(i*10)));
+                    .withName(CommonFunctions.randomString(i*10))
+                    .withHeader(CommonFunctions.randomString(i*10))
+                    .withFooter(CommonFunctions.randomString(i*10)));
         }
         return result;
     }
