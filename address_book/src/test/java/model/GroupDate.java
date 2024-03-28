@@ -1,21 +1,24 @@
 package model;
 
-public record GroupDate(String name, String header, String footer) {
+public record GroupDate(String id, String name, String header, String footer) {
     public GroupDate(){
-        this ("name","header","footer");
+        this ("", "name","header","footer");
     }
 
-    public GroupDate withName(String someName) {
-      return new GroupDate(name, this.header, this.footer);
+    public GroupDate withName(String name) {
+      return new GroupDate(this.id, name, this.header, this.footer);
+    }
+    public GroupDate withId(String id) {
+        return new GroupDate(id, this.name, this.header, this.footer);
     }
 
     public GroupDate withHeader(String header) {
-        return new GroupDate(this.name, header, this.footer);
+        return new GroupDate(this.id, this.name, header, this.footer);
 
     }
 
     public GroupDate withFooter(String footer) {
-        return new GroupDate(this.name, this.header, footer);
+        return new GroupDate(this.id, this.name, this.header, footer);
 
     }
 }

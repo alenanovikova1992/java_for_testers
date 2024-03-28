@@ -20,7 +20,7 @@ public class ContactHelper extends  HelperBase{
 
     public void removeContact() {
         openContactPage();
-        selectContact();
+        selectContactAll();
         removeSelectedContact();
         returnToContactPage();
     }
@@ -40,8 +40,9 @@ public class ContactHelper extends  HelperBase{
     private void returnToContactPage() {
         click(By.linkText("add new"));
     }
-      private void selectContact() {
-     click(By.xpath("//input[@id=\'MassCB\']"));
+      private void selectContactAll() {
+          // manager.driver.findElements(By.name("selected[]"));
+          click(By.xpath("//input[@id=\'MassCB\']"));
     }
     public int getCount() {
         openContactPage();

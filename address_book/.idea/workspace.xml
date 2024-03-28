@@ -69,7 +69,7 @@
       <recent name="manager" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.ContactCreationTest">
+  <component name="RunManager" selected="Gradle.GroupRemovalTest">
     <configuration name="ContactCreationTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -93,7 +93,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ContactCreationTest.canCreateMultipleContact" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ContactRemovalTestAll" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -106,30 +106,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;tests.Contact.ContactCreationTest.canCreateMultipleContact&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="ContactRemovalTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;tests.Contact.ContactRemovalTest&quot;" />
+            <option value="&quot;tests.Contact.ContactRemovalTestAll&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -162,7 +139,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="GroupCreationTest.canCreateMultipleGroup" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="GroupRemovalTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -175,7 +152,30 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;tests.Group.GroupCreationTest.canCreateMultipleGroup&quot;" />
+            <option value="&quot;tests.Group.GroupRemovalTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="GroupRemovalTest.canRemoveGroup" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;tests.Group.GroupRemovalTest.canRemoveGroup&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -186,19 +186,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Gradle.ContactCreationTest.canCreateMultipleContact" />
+      <item itemvalue="Gradle.ContactRemovalTestAll" />
+      <item itemvalue="Gradle.GroupRemovalTest" />
+      <item itemvalue="Gradle.GroupRemovalTest.canRemoveGroup" />
       <item itemvalue="Gradle.ContactCreationTest" />
-      <item itemvalue="Gradle.ContactRemovalTest" />
       <item itemvalue="Gradle.GroupCreationTest" />
-      <item itemvalue="Gradle.GroupCreationTest.canCreateMultipleGroup" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.ContactCreationTest" />
-        <item itemvalue="Gradle.ContactCreationTest.canCreateMultipleContact" />
-        <item itemvalue="Gradle.ContactRemovalTest" />
-        <item itemvalue="Gradle.GroupCreationTest.canCreateMultipleGroup" />
+        <item itemvalue="Gradle.GroupRemovalTest" />
+        <item itemvalue="Gradle.GroupRemovalTest.canRemoveGroup" />
         <item itemvalue="Gradle.GroupCreationTest" />
+        <item itemvalue="Gradle.ContactCreationTest" />
+        <item itemvalue="Gradle.ContactRemovalTestAll" />
       </list>
     </recent_temporary>
   </component>
@@ -217,14 +217,14 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/manager/GropHelper.java</url>
-          <line>96</line>
-          <option name="timeStamp" value="4" />
+          <url>file://$PROJECT_DIR$/src/test/java/tests/Group/GroupRemovalTest.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/tests/Contact/ContactCreationTest.java</url>
-          <line>53</line>
-          <option name="timeStamp" value="8" />
+          <url>file://$PROJECT_DIR$/src/test/java/tests/Group/GroupRemovalTest.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

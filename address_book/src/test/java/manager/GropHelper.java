@@ -3,6 +3,9 @@ package manager;
 import model.GroupDate;
 import org.openqa.selenium.By;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class GropHelper extends  HelperBase{
     public GropHelper (ApplicationManager manager ){
         super(manager);
@@ -24,15 +27,15 @@ public class GropHelper extends  HelperBase{
 
     public void modifyGroup(GroupDate modifiedGroup) {
         openGroupsPage();
-        selectGroup();
+        selectGroup(null);
         initGroupModification();
         fillGroupForm(modifiedGroup);
         submitGroupModification();
         returnToGroupsPage();
     }
-    public void removeGroup() {
+    public void removeGroup(GroupDate group) {
         openGroupsPage();
-        selectGroup();
+        selectGroup(group);
         removeSelectedGroups();
         returnToGroupsPage();
     }
@@ -70,10 +73,11 @@ public class GropHelper extends  HelperBase{
     }
 
 
-    private void selectGroup() {
-        openGroupsPage();
-        click(By.linkText("groups"));
-        click(By.name("selected[]"));
+    private void selectGroup(GroupDate group) {
+    //  openGroupsPage();
+      click(By.cssSelector(String.format("input[value='%s']",group.id())));
+       // click(By.linkText("groups"));
+       // click(By.name("selected[]"));
 
     }
 
@@ -97,5 +101,17 @@ public class GropHelper extends  HelperBase{
         for (var checkbox: checkboxes){
             checkbox.click();
         }
+    }
+
+    public List<GroupDate> getList() {
+        var groups = new ArrayList<GroupDate>();
+        var spans = manager.driver.findElements(By.cssSelector("span.group"));
+        for (var span : spans ){
+            var name = span.getText();
+            var checkbox = span.findElement(By.name("selected[]"));
+            var id  = checkbox.getAttribute("value");
+            groups.add(new GroupDate().withId(id).withName(name));
+        }
+        return groups;
     }
 }
