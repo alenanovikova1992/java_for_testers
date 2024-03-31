@@ -82,11 +82,11 @@
       <recent name="manager" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.GroupCreationTest">
+  <component name="RunManager" selected="Application.Generator">
     <configuration name="Generator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="generator.Generator" />
       <module name="org.example.address_book.test" />
-      <option name="PROGRAM_PARAMETERS" value="--type groups --output groups.json --format json --count 3" />
+      <option name="PROGRAM_PARAMETERS" value="-- type groups --output groups.json --format json --count 3" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="generator.*" />
@@ -198,11 +198,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.GroupCreationTest" />
         <item itemvalue="Application.Generator" />
         <item itemvalue="Gradle.ContactCreationTest" />
         <item itemvalue="Gradle.ContactCreationTest.canCreateContact" />
         <item itemvalue="Gradle.ContactModificationTest" />
+        <item itemvalue="Gradle.GroupCreationTest" />
       </list>
     </recent_temporary>
   </component>
