@@ -18,7 +18,7 @@ dependencies {
   //  implementation 'org.jcommader:jcommander:1.83'
     implementation group: 'com.beust', name: 'jcommander', version: '1.82'
     implementation 'com.fasterxml.jackson.core:jackson-databind:2.16.0'
-
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.16.0'
 }
 
 test {
