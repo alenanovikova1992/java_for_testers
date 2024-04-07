@@ -1,5 +1,7 @@
 package tests.Contact;
 
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import model.ContactDate;
 import model.GroupDate;
 import org.junit.jupiter.api.Assertions;
@@ -9,6 +11,8 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
 
 import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Comparator;
@@ -17,6 +21,18 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class ContactCreationTest extends TestBase {
+
+    public static List<ContactDate> contactProvider() throws IOException {
+        var result = new ArrayList<ContactDate>();
+        var json = Files.readString(Paths.get("contacts.json"));
+        ObjectMapper mapper = new ObjectMapper();
+        var value = mapper.readValue(json, new TypeReference<List<ContactDate>>() {});
+        result.addAll(value);
+        return  result;
+
+
+    }
+
     @Test
     public void canCreateContact() {
     var  contact = new ContactDate()
@@ -41,7 +57,24 @@ public class ContactCreationTest extends TestBase {
 
     }
 
-}
+
+
+    @ParameterizedTest
+    @MethodSource("contactProvider")
+    public void canCreateMultipleContact(ContactDate contact) {
+        var oldContacts= app.contacts().getList();
+        app.contacts().createContact(contact);
+        var newContacts= app.contacts().getList();
+        Comparator<ContactDate> compareByID = (o1,o2) ->{
+            return  Integer.compare(Integer.parseInt(o1.id()), Integer.parseInt((o2).id()));
+
+        };
+        newContacts.sort(compareByID);
+        var expectedList = new ArrayList<>(oldContacts);
+        expectedList.add(contact.withID(newContacts.get(newContacts.size()-1).id()).withlastname("").withMiddlename(""));
+        expectedList.sort(compareByID);
+        Assertions.assertEquals(newContacts,expectedList);
+    }}
 /*
 public class ContactCreationTest extends TestBase {
     public static List<ContactDate> contactProvider() {

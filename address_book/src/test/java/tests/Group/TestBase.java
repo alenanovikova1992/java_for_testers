@@ -8,8 +8,6 @@ import java.util.Map;
 
 public class TestBase {
     protected  static ApplicationManager app;
-    private Map<String, Object> vars;
-    JavascriptExecutor js;
     @BeforeEach
     public void setUp() {
         if (app == null){
@@ -17,5 +15,4 @@ public class TestBase {
         }
          app.init(System.getProperty("browser", "Google Chrome"));
     }
-
 }

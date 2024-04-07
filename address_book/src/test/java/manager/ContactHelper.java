@@ -15,7 +15,8 @@ public class ContactHelper extends  HelperBase{
         openNewContactPage();
         fillContactForm(contact);
         submitContactCreation();
-        returnToContactsPage();
+        openContactPage();
+      //  returnToContactsPage();
     }
 
     private void fillContactForm(ContactDate contact) {
@@ -26,8 +27,8 @@ public class ContactHelper extends  HelperBase{
         // click(By.cssSelector("input:nth-child(75)"));
     }
     private void submitContactCreation() {
-        click(By.name("submit"));
-        //click(By.cssSelector("input:nth-child(75)"));
+       // click(By.name("submit"));
+        click(By.cssSelector("input:nth-child(75)"));
     }
     private void returnToContactsPage() {
         click(By.linkText("home"));
@@ -88,7 +89,7 @@ public class ContactHelper extends  HelperBase{
     public List<ContactDate> getList() {
         openContactPage();
         var contacts = new ArrayList<ContactDate>();
-        var spans = manager.driver.findElements(By.cssSelector("span.contact"));
+        var spans = manager.driver.findElements(By.cssSelector("span.groups"));
         for (var span : spans ){
             var name = span.getText();
             var checkbox = span.findElement(By.name("selected[]"));

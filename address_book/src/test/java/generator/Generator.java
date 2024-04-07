@@ -4,6 +4,7 @@ import com.beust.jcommander.Parameter;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import common.CommonFunctions;
+import model.ContactDate;
 import model.GroupDate;
 
 import java.io.File;
@@ -78,7 +79,14 @@ public class Generator {
     }
 
     private Object generateContacts() {
-        return null;
+        var result = new ArrayList<ContactDate>();
+        for (int i=0; i < count; i++) {
+            result.add(new ContactDate()
+                    .withlastname(CommonFunctions.randomString(i*10))
+                    .withMiddlename(CommonFunctions.randomString(i*10))
+                    .withFirstname(CommonFunctions.randomString(i*10)));
+        }
+        return result;
     }
 
 }
