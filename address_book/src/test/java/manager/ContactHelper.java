@@ -79,17 +79,21 @@ public class ContactHelper extends  HelperBase{
     }
 
     private void submitContactModification() {
-        click(By.name("update"));
+
+       // click(By.name("update")
+
+        click(By.cssSelector("input:nth-child(75)"));
     }
     public int getCount() {
         openContactPage();
-        return manager.driver.findElements(By.name("selected[]")).size();
+                return manager.driver.findElements(By.name("selected[]")).size();
     }
 
     public List<ContactDate> getList() {
         openContactPage();
         var contacts = new ArrayList<ContactDate>();
-        var spans = manager.driver.findElements(By.cssSelector("span.groups"));
+       // var spans = manager.driver.findElements(By.cssSelector("span.contact"));
+        var spans = manager.driver.findElements(By.name("selected[]"));
         for (var span : spans ){
             var name = span.getText();
             var checkbox = span.findElement(By.name("selected[]"));

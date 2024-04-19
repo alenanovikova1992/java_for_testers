@@ -1,5 +1,4 @@
 package tests.Contact;
-
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import model.ContactDate;
@@ -9,7 +8,6 @@ import org.junit.jupiter.api.Test;
 import tests.Group.TestBase;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
-
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -19,9 +17,7 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Random;
-
 public class ContactCreationTest extends TestBase {
-
     public static List<ContactDate> contactProvider() throws IOException {
         var result = new ArrayList<ContactDate>();
         var json = Files.readString(Paths.get("contacts.json"));
@@ -29,10 +25,7 @@ public class ContactCreationTest extends TestBase {
         var value = mapper.readValue(json, new TypeReference<List<ContactDate>>() {});
         result.addAll(value);
         return  result;
-
-
     }
-
     @Test
     public void canCreateContact() {
     var  contact = new ContactDate()

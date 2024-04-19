@@ -8,6 +8,15 @@ version '1.0-SNAPSHOT'
 repositories {
     mavenCentral()
 }
+def allureVersion = '2.26.0'
+def aspectJVersion = '1.9.22'
+
+configurations {
+    agent {
+        canBeResolved = true
+        canBeConsumed = true
+    }
+}
 
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
@@ -19,6 +28,10 @@ dependencies {
     implementation group: 'com.beust', name: 'jcommander', version: '1.82'
     implementation 'com.fasterxml.jackson.core:jackson-databind:2.16.0'
     implementation 'com.fasterxml.jackson.core:jackson-databind:2.16.0'
+    agent "org.aspectj:aspectjweaver:$aspectJVersion"
+
+    testImplementation platform("io.qameta.allure:allure-bom:$allureVersion")
+    testImplementation "io.qameta.allure:allure-junit5"
 }
 
 test {
@@ -26,4 +39,5 @@ test {
     if (project.hasProperty("browser")){
         systemProperty("browser",project.hasProperty("browser"))
     }
+    jvmArgs = [ "-javaagent:${configurations.agent.singleFile}" ]
 }
