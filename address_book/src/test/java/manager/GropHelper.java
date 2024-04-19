@@ -1,5 +1,6 @@
 package manager;
 
+import io.qameta.allure.Step;
 import model.GroupDate;
 import org.openqa.selenium.By;
 
@@ -11,6 +12,8 @@ public class GropHelper extends  HelperBase{
         super(manager);
 
     }
+
+    @Step
     public void createGroup(GroupDate group) {
         openGroupsPage();
         initGroupCreation();
@@ -102,7 +105,7 @@ public class GropHelper extends  HelperBase{
             checkbox.click();
         }
     }
-
+@Step
     public List<GroupDate> getList() {
         openGroupsPage();
         var groups = new ArrayList<GroupDate>();
