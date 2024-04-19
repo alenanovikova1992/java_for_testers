@@ -79,7 +79,7 @@
       <recent name="manager" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.ContactCreationTest">
+  <component name="RunManager" selected="Gradle.loginTests">
     <configuration name="ContactCreationTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -204,11 +204,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.loginTests" />
         <item itemvalue="Gradle.ContactCreationTest" />
         <item itemvalue="Gradle.ContactCreationTest.canCreateMultipleContact" />
         <item itemvalue="Gradle.ContactCreationTest.canCreateContact" />
         <item itemvalue="Gradle.loginTests.canLogin" />
-        <item itemvalue="Gradle.loginTests" />
       </list>
     </recent_temporary>
   </component>
