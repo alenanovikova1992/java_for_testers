@@ -24,7 +24,6 @@ public class Generator {
 
     @Parameter (names={"--count", "-c"})
     int count;
-
     public static void main (String[] args) throws IOException {
       var generator =  new Generator();
         JCommander.newBuilder()
@@ -33,7 +32,6 @@ public class Generator {
                    .parse(args);
       generator.run();
     }
-
     private void run() throws IOException {
         var data = generate();
         save(data);
@@ -46,7 +44,6 @@ public class Generator {
             var json =  mapper.writeValueAsString(data);
            try ( var writer = new FileWriter(output)){
                writer.write(json);
-
               // writer.close();
            }
 
@@ -55,7 +52,6 @@ public class Generator {
             throw  new IllegalArgumentException("неизвестный формат"+format);
         }
     }
-
     private Object generate() {
         if ("groups".equals(type)){
             return  generateGroups();
@@ -65,7 +61,6 @@ public class Generator {
         }  else{
             throw new IllegalArgumentException("неизвестный тип данных" + type);
         }
-
     }
 
     private Object generateGroups() {
@@ -87,6 +82,7 @@ public class Generator {
                     .withMiddlename(CommonFunctions.randomString(i*10))
                     .withFirstname(CommonFunctions.randomString(i*10)));
         }
+
         return result;
     }
 
