@@ -46,6 +46,7 @@ public class Generator {
             var json =  mapper.writeValueAsString(data);
            try ( var writer = new FileWriter(output)){
                writer.write(json);
+               
               // writer.close();
            }
 

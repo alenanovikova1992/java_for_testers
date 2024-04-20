@@ -79,7 +79,7 @@
       <recent name="manager" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.loginTests">
+  <component name="RunManager" selected="Gradle.ContactCreationTest">
     <configuration name="ContactCreationTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -149,6 +149,29 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="GroupCreationTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;tests.Group.GroupCreationTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="loginTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -172,43 +195,20 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="loginTests.canLogin" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/../mantis_tests" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;ru.stqa.mantis.tests.loginTests.canLogin&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
     <list>
+      <item itemvalue="Gradle.GroupCreationTest" />
       <item itemvalue="Gradle.ContactCreationTest.canCreateContact" />
       <item itemvalue="Gradle.loginTests" />
-      <item itemvalue="Gradle.loginTests.canLogin" />
       <item itemvalue="Gradle.ContactCreationTest.canCreateMultipleContact" />
       <item itemvalue="Gradle.ContactCreationTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.loginTests" />
         <item itemvalue="Gradle.ContactCreationTest" />
+        <item itemvalue="Gradle.GroupCreationTest" />
+        <item itemvalue="Gradle.loginTests" />
         <item itemvalue="Gradle.ContactCreationTest.canCreateMultipleContact" />
         <item itemvalue="Gradle.ContactCreationTest.canCreateContact" />
-        <item itemvalue="Gradle.loginTests.canLogin" />
       </list>
     </recent_temporary>
   </component>
