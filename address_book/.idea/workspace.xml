@@ -80,19 +80,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Gradle.ContactCreationTest">
-    <configuration name="Generator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="generator.Generator" />
-      <module name="org.example.address_book.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="generator.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ContactCreationTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -107,6 +94,29 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;tests.Contact.ContactCreationTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="ContactCreationTest.canCreateContact" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;tests.Contact.ContactCreationTest.canCreateContact&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -186,8 +196,8 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.Generator" />
       <item itemvalue="Gradle.GroupCreationTest" />
+      <item itemvalue="Gradle.ContactCreationTest.canCreateContact" />
       <item itemvalue="Gradle.loginTests" />
       <item itemvalue="Gradle.ContactCreationTest.canCreateMultipleContact" />
       <item itemvalue="Gradle.ContactCreationTest" />
@@ -195,10 +205,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.ContactCreationTest" />
-        <item itemvalue="Application.Generator" />
         <item itemvalue="Gradle.GroupCreationTest" />
         <item itemvalue="Gradle.loginTests" />
         <item itemvalue="Gradle.ContactCreationTest.canCreateMultipleContact" />
+        <item itemvalue="Gradle.ContactCreationTest.canCreateContact" />
       </list>
     </recent_temporary>
   </component>
